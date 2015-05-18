@@ -1,9 +1,9 @@
 require "rubygems"
 require "oauth"
 
-subdomain = 'idxbroker'
+subdomain = 'Your_Subdomian'
 case_number = '2662'
-url = "https://idxbroker.desk.com/api/v2/cases/search\?q=case:"
+url = "https://Your_Subdomian.desk.com/api/v2/cases/search\?q=case:"
 
 end_point = url + case_number
 
