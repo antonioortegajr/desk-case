@@ -1,9 +1,11 @@
 require "rubygems"
 require "oauth"
 
-subdomain = YourSubDomain
-case_number = YourCase
-url = 'https://' + subdomain + '.desk.com/api/v2/cases/search\?q="' + case_number '"'
+subdomain = 'idxbroker'
+case_number = '2662'
+url = "https://idxbroker.desk.com/api/v2/cases/search\?q=case:"
+
+end_point = url + case_number
 
 consumer = OAuth::Consumer.new(
         "API_CONSUMER_KEY",
@@ -18,4 +20,7 @@ access_token = OAuth::AccessToken.from_hash(
         :oauth_token_secret => "ACCESS_TOKEN_SECRET"
 )
 
-response = access_token.get("https://idxbroker.desk.com/api/v2/cases/search\?q="case:2662")
+response = access_token.get(end_point)
+
+
+puts response.body
