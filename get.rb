@@ -1,4 +1,3 @@
-require "rubygems"
 require "oauth"
 
 subdomain = 'Your_Subdomian'
