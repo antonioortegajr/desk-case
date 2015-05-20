@@ -2,6 +2,8 @@
 GET Cases from DESK via API
 
 
-Place holder repo
+Call the Desk API and get details on a specified cases number.
+
+This case number is passed via the url.
 
 Will add to this after some testing.
