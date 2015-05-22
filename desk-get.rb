@@ -1,13 +1,14 @@
 require 'sinatra'
 require 'oauth'
+require 'json'
 
 
 get '/case/:number' do |n|
 
 case_number = "#{n}"
-url = "https://YOURSUBDOMAIN.desk.com/api/v2/cases/search\?q=case:"
+url = "https://YOURSUBDOMAIN.desk.com/api/v2/cases/"
 
-end_point = url + case_number
+end_point = url + case_number + message
 
 consumer = OAuth::Consumer.new(
         "API_CONSUMER_KEY",
