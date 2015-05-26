@@ -10,4 +10,6 @@ This does not pass the repliesor the notes.
 
 This does require an active desk.com account.
 
+oauth, sinatra, and json gems used.
+
 Desk.com API docs can be found here: http://dev.desk.com/.
